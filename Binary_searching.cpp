@@ -54,26 +54,6 @@ int main()
     cout << "enter the element which you want to find :- " << endl;
     cin >> elm;
 
-    for (a = 0; a < size; a++) // array shorting for binary searching.
-    {
-        for (b = a; b < size; b++)
-        {
-            if (arr[a] > arr[b])
-            {
-                tem = arr[a];
-                arr[a] = arr[b];
-                arr[b] = tem;
-            }
-        }
-    }
-
-    cout << " the shorted array = ";
-    for (a = 0; a < size; a++)
-    {
-        cout << " " << arr[a];
-    }
-    cout << endl;
-
     binary_search(arr, size, elm);
 
     return 0;
@@ -88,7 +68,6 @@ OUTPUT:-
   1
   enter the element which you want to find :-
   9
-   the shorted array =  1 3 4 8 9
-  the found element 9 at index 4
+  the found element 9 at index 3
    taken times = 3 times
    */
